@@ -12,6 +12,12 @@ NDefines.NNationDesigner.IDEAS_MAX_LEVEL = 75
 -- Default (1821.1.2).
 NDefines.NGame.END_DATE = "1856.1.2"
 
+-- Default (25).
+NDefines.NGame.DAYS_BEHIND_PAUSE = 45
+
+-- Default (10).
+NDefines.NGame.DAYS_BEHIND_LOWER_SPEED = 28
+
 
 -- #######################################################
 -- ### NDIPLOMACY ########################################
@@ -52,6 +58,8 @@ NDefines.NDiplomacy.CELESTIAL_EMPIRE_DEFAULT_INFLUENCE = 40
 -- Default (0.24).
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_STABILITY = 0.15
 
+-- Default (10).
+NDefines.NDiplomacy.REFUSED_CALL_FROM_TRIBUTARY_MANDATE_LOSS = 20
 
 -- Default (20).
 NDefines.NDiplomacy.COALITION_YEARS = 15
@@ -70,7 +78,11 @@ NDefines.NDiplomacy.PO_HUMILIATE_POWER_GAIN = 200
 
 
 -- Default (8).
-NDefines.NDiplomacy.NUM_OF_GREAT_POWERS = 10
+-- Potential crash cause.
+NDefines.NDiplomacy.NUM_OF_GREAT_POWERS = 8
+
+-- Default (0.5).
+NDefines.NDiplomacy.GREAT_POWER_SUBJECT_CONTRIBUTION = 0.33
 
 
 -- #######################################################
@@ -78,20 +90,27 @@ NDefines.NDiplomacy.NUM_OF_GREAT_POWERS = 10
 -- #######################################################
 
 
+-- Default (60).
+NDefines.NCountry.ABDICATE_AGE_THRESHOLD = 55
+
+-- Default (-50).
+NDefines.NCountry.ABDICATE_PRESTIGE_HIT = -20
+
 -- Default (-50).
 NDefines.NCountry.DISINHERIT_PRESTIGE_HIT = -20
 
 -- Default (500).
 NDefines.NCountry.ADDITIONAL_MIN_DEVELOPMENT_FOR_GOV_RANK_X = 1000
 
+-- Default (25).
+NDefines.NCountry.PRESTIGE_GAIN_FOR_GOV_RANK_X = 100
 
 -- Default (3).
 NDefines.NCountry.MAX_GOV_RANK = 5
 
-
 -- Default (100).
 -- Must at least be eligible to be a kingdom (government rank 2).
-NDefines.NCountry.MIN_DEV_FOR_OLD_GREAT_POWER = 350
+NDefines.NCountry.MIN_DEV_FOR_OLD_GREAT_POWER = 500
 
 
 -- Default (30).
@@ -142,12 +161,16 @@ NDefines.NCountry.PS_STRENGTHEN_GOVERNMENT = 75
 NDefines.NCountry.PS_BOOST_MILITARIZATION = 30
 
 
+-- Default (0.75).
+NDefines.NCountry.STARTING_ARMY_SIZE = 0.7
+
+
 -- Default (2).
 NDefines.NCountry.MAX_EXTRA_PERSONALITIES = 3
 
 
 -- Default (10).
-NDefines.NCountry.FIRST_EXTRA_PERSONALITY = 5
+NDefines.NCountry.FIRST_EXTRA_PERSONALITY = 20
 
 
 -- Default (15).
@@ -157,9 +180,14 @@ NDefines.NCountry.YEARS_PER_EXTRA_PERSONALITY = 5
 -- Default (6).
 NDefines.NCountry.MONTHS_TO_CORE_MINIMUM = 4
 
+-- Default (0).
+NDefines.NCountry.MONARCH_MIN_SKILL = -1
 
--- Changes the maximum monarch points in each category from default (6) to 7.
+-- Default (6).
 NDefines.NCountry.MONARCH_MAX_SKILL = 7
+
+-- Default (3)
+NDefines.NCountry.BASE_POWER_INCREASE = 3
 
 
 -- Changes high liberty desire from default (50) to 60.
@@ -173,6 +201,15 @@ NDefines.NCountry.LIBERTY_DESIRE_RELATIVE_POWER = 40
 -- Changes liberty desire per positive opinion from default (-0.1) to -0.2.
 -- This means that you can have a maximum of -40% liberty desire from opinion instead of -20%.
 NDefines.NCountry.LIBERTY_DESIRE_POSITIVE_OPINION = -0.2
+
+-- Default (0.2).
+NDefines.NCountry.LIBERTY_DESIRE_NEGATIVE_OPINION = 0.5
+
+-- Default (4).
+NDefines.NCountry.MAX_CROWN_COLONIES = 5
+
+-- Default (100).
+NDefines.NCountry.INNOVATIVENESS_MAX = 150
 
 
 -- Changes liberty desire per diplo rep from default (-3) to -5.
@@ -202,6 +239,10 @@ NDefines.NEconomy.GOLD_MINE_DEPLETION_CHANCE = 0.045
 
 
 -- Default (2).
+NDefines.NEconomy.EDICTS_COST_INCREASE = 3
+
+
+-- Default (2).
 NDefines.NEconomy.DEBASE_ADDED_CORRUPTION = 1.5
 
 
@@ -223,6 +264,10 @@ NDefines.NEconomy.AUTONOMY_AT_CONQUEST = 40
 
 -- Default (10950 (~30 years)).
 NDefines.NEconomy.AUTONOMY_CHANGE_DURATION = 5475
+
+
+-- Default (1).
+NDefines.NEconomy.ADVISOR_COST = 0.9
 
 
 -- #######################################################
@@ -248,6 +293,21 @@ NDefines.NMilitary.LEADER_MAX_PIPS = 7
 
 -- Default (3)
 NDefines.NMilitary.HEAVY_SHIP_COMBAT_WIDTH = 5
+
+
+-- #######################################################
+-- ### NAI ###############################################
+-- #######################################################
+
+
+-- Default (60).
+NDefines.NAI.MAX_SAVINGS = 120
+
+-- Default (10).
+NDefines.NAI.MIN_SHIPS_FOR_ADMIRAL = 40
+
+-- Default (0.85).
+NDefines.NAI.HOME_FLEET_MAX_RATIO = 0.8
 
 
 -- #######################################################

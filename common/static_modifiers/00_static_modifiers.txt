@@ -1656,10 +1656,10 @@ revolutionary_guard_regiment = {
 }
 
 innovativeness = {
-	all_power_cost	= -0.125 #cozy
-	army_tradition_decay = -0.02 #cozy
-	navy_tradition_decay = -0.02 #cozy
-	reform_progress_growth = 2 #cozy
+	all_power_cost	= -0.15 #cozy
+	army_tradition_decay = -0.03 #cozy
+	navy_tradition_decay = -0.03 #cozy
+	reform_progress_growth = 3 #cozy
 }
 
 rajput_regiment = {
