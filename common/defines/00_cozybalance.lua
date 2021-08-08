@@ -1,5 +1,5 @@
 
-NDefines.NNationDesigner.MAX_GOVERNMENT_RANK = 5
+-- NDefines.NNationDesigner.MAX_GOVERNMENT_RANK = 5
 NDefines.NNationDesigner.RULER_MAX_SKILL = 7
 NDefines.NNationDesigner.IDEAS_MAX_LEVEL = 75
 
@@ -64,7 +64,6 @@ NDefines.NDiplomacy.REFUSED_CALL_FROM_TRIBUTARY_MANDATE_LOSS = 20
 -- Default (20).
 NDefines.NDiplomacy.COALITION_YEARS = 15
 
-
 -- Default (20).
 NDefines.NDiplomacy.FABRICATE_CLAIM_COST = 25
 
@@ -100,17 +99,17 @@ NDefines.NCountry.ABDICATE_PRESTIGE_HIT = -20
 NDefines.NCountry.DISINHERIT_PRESTIGE_HIT = -20
 
 -- Default (500).
-NDefines.NCountry.ADDITIONAL_MIN_DEVELOPMENT_FOR_GOV_RANK_X = 1000
+-- NDefines.NCountry.ADDITIONAL_MIN_DEVELOPMENT_FOR_GOV_RANK_X = 1000
 
 -- Default (25).
-NDefines.NCountry.PRESTIGE_GAIN_FOR_GOV_RANK_X = 100
+-- NDefines.NCountry.PRESTIGE_GAIN_FOR_GOV_RANK_X = 100
 
 -- Default (3).
-NDefines.NCountry.MAX_GOV_RANK = 5
+-- NDefines.NCountry.MAX_GOV_RANK = 5
 
 -- Default (100).
 -- Must at least be eligible to be a kingdom (government rank 2).
-NDefines.NCountry.MIN_DEV_FOR_OLD_GREAT_POWER = 500
+-- NDefines.NCountry.MIN_DEV_FOR_OLD_GREAT_POWER = 500
 
 
 -- Default (30).
@@ -181,7 +180,7 @@ NDefines.NCountry.YEARS_PER_EXTRA_PERSONALITY = 5
 NDefines.NCountry.MONTHS_TO_CORE_MINIMUM = 4
 
 -- Default (0).
-NDefines.NCountry.MONARCH_MIN_SKILL = -1
+-- NDefines.NCountry.MONARCH_MIN_SKILL = -1
 
 -- Default (6).
 NDefines.NCountry.MONARCH_MAX_SKILL = 7

@@ -2,36 +2,38 @@ staple_port = {
     level = 1
     type = coastal
     province_modifiers = {
-        province_trade_power_value = 5
+        province_trade_power_value = 10 #cozy
     }
 }
 
 entrepot = {
     level = 2
+	development = 10
     cost = 200
     type = coastal
     province_modifiers = {
-        province_trade_power_value = 15 #cozy
-        local_development_cost = -0.05
+        province_trade_power_value = 20
+        local_development_cost = -0.1 #cozy
         local_institution_spread = 0.1
     }
 }
 
 world_port = {
     level = 3
+	development = 25
     cost = 1000
     type = coastal
     province_modifiers = {
-        province_trade_power_value = 50 #cozy
-        local_institution_spread = 0.5 #cozy
+        province_trade_power_value = 30 #cozy
+        local_institution_spread = 0.3
     }
     state_modifiers = {
         local_development_cost = -0.25 #cozy
         local_sailors_modifier = 1
-        allowed_num_of_buildings = 1
+        allowed_num_of_buildings = 2 #cozy
     }
     global_modifiers = {
-        navy_tradition_decay = -0.002
+        navy_tradition_decay = -0.005 #cozy
     }
 }
 
@@ -39,31 +41,33 @@ emporium = {
     level = 1
     type = inland
     province_modifiers = {
-        province_trade_power_value = 5
+        province_trade_power_value = 10 #cozy
     }
 }
 
 market_town = {
     level = 2
     cost = 200
+	development = 10
     type = inland
     province_modifiers = {
-        province_trade_power_value = 10
-        local_development_cost = -0.05
+        province_trade_power_value = 20 #cozy
+        local_development_cost = -0.10 #cozy
     }
 }
 
 world_trade_center = {
     level = 3
     cost = 1000
+	development = 25
     type = inland
     province_modifiers = {
-        province_trade_power_value = 25 #cozy
-        local_institution_spread = 0.35 #cozy
+        province_trade_power_value = 30 #cozy
+        local_institution_spread = 0.5 #cozy
     }
     state_modifiers = {
         local_development_cost = -0.25 #cozy
         local_manpower_modifier = 0.5 #cozy
-        allowed_num_of_buildings = 1
+        allowed_num_of_buildings = 2 #cozy
     }
 }
