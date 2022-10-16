@@ -4,4 +4,4 @@ tags={
 	"gameplay"
 }
 picture="mmp.jpg"
-supported_version="1.31.*.*"
+supported_version="1.34.*.*"

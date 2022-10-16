@@ -3,7 +3,7 @@
 client_ideas = {
 	start = {
 		land_morale = 0.1
-		core_creation = -0.15
+		core_creation = -0.15 #cozy
 	}
 	
 	bonus = {
@@ -38,10 +38,48 @@ client_ideas = {
 	}
 }
 
+trading_city_ideas = {
+	start = {
+		development_cost = -0.05
+		build_cost = -0.1
+	}
+	
+	bonus = {
+		production_efficiency = 0.1
+	}
+	
+	trigger = {
+		has_reform = trading_city
+	}
+	free = yes
+		
+	tc_city_of_commerce = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	tc_self_defense = {	
+		garrison_size = 0.25
+	}
+	tc_merchant_guild = {
+		merchants = 1
+	}
+	tc_citys_artisans = {
+		global_trade_goods_size_modifier = 0.1
+	}	
+	tc_city_mercenary_contracts = {
+		mercenary_cost = -0.15
+	}
+	tc_merchant_range = {
+		trade_range_modifier = 0.25
+	}	
+	tc_trade_fleet = {
+		global_ship_trade_power = 0.15
+	}
+}
+
 
 colonial_ideas = {
 	start = {
-		development_cost = -0.2
+		development_cost = -0.2 #cozy
 		no_religion_penalty = yes
 	}
 	
@@ -55,23 +93,23 @@ colonial_ideas = {
 	free = yes
 	
 	founding_fathers = {
-		republican_tradition = 0.75
+		republican_tradition = 0.75 #cozy
 	}
 	continental_trade = {
 		global_prov_trade_power_modifier = 0.25
 	}
 	manufacturing_center = {
-		build_cost = -0.1
+		build_cost = -0.15 #cozy
 	}
 	free_thinkers = {
-		idea_cost = -0.2
+		idea_cost = -0.2 #cozy
 	}
 	colonial_militia = {
 		global_regiment_cost = -0.1
 	}
 	new_frontiers = {
 		auto_explore_adjacent_to_colony = yes
-		global_colonial_growth = 30
+		global_colonial_growth = 30 #cozy
 	}
 	liberty_heroes = {
 		free_leader_pool = 1
@@ -88,7 +126,7 @@ barbary_pirate_ideas = {
 		legitimacy = 1
 	}
 	trigger = {
-		has_reform = pirate_republic_reform
+		has_government_attribute = is_pirate_republic_reform
 		OR = {
 			culture_group = maghrebi
 			tag = TET
@@ -131,15 +169,17 @@ pirate_ideas = {
 	}
 	trigger = {
 		OR = {
-			has_reform = pirate_republic_reform
+			AND = {
+				has_government_attribute = is_pirate_republic_reform
+				NOT = { culture_group = maghrebi }
+				NOT = { tag = TET }
+				NOT = { tag = SLE }
+			}
 			tag = NSS
 			tag = PRY
 			tag = TOR
 			tag = LIB
 		}
-		NOT = { culture_group = maghrebi }
-		NOT = { tag = TET }
-		NOT = { tag = SLE }
 	}
 	free = yes
 	
@@ -1384,7 +1424,10 @@ TIB_ideas = {
 		OR = {
 			tag = TIB
 			AND = {
-				primary_culture = tibetan
+				OR = {
+					primary_culture = tibetan
+					primary_culture = tibetan_new
+				}
 				religion = vajrayana 
 			}
 		}
@@ -2761,6 +2804,7 @@ plains_native_ideas = {
 			primary_culture = kiowa
 			primary_culture = shoshone
 		}
+		NOT = { primary_culture = caddo }
 	}
 	free = yes
 	
@@ -3238,7 +3282,7 @@ central_algonquian_federation_ideas = {
 		global_manpower_modifier = 0.2
 	}
 	calg_teaching_scrolls = {
-		idea_cost = 0.1
+		idea_cost = -0.1
 	}
 	calg_seven_fires_prophecy = {
 		technology_cost = -0.1
@@ -3335,5 +3379,46 @@ generic_federation_ideas = {
 	}
 	fed_sunrise_invasion = {
 		global_colonial_growth = 30
+	}
+}
+
+horn_of_african_ideas = {
+	start = {
+		stability_cost_modifier = -0.1
+		global_tax_modifier = 0.1
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		culture_group = cushitic
+		NOT = { primary_culture = somali }
+		NOT = { primary_culture = tigray }
+		NOT = { tag = ETH }
+	}
+	free = yes
+	
+	horn_of_african_aksumite_legacy = {
+		global_unrest = -1
+	}
+	horn_of_african_punt_legend = {
+		trade_range_modifier = 0.2
+	}
+	horn_of_african_highland_cultivation = {
+		development_cost = -0.05
+	}
+	horn_of_african_oromon_warriors = {
+		infantry_power = 0.1
+	}
+	horn_of_african_religious_melting_pot = {
+		tolerance_heathen = 1
+	}
+	horn_of_african_cushitic_language = {
+		improve_relation_modifier = 0.15
+	}
+	horn_of_african_religious_defensive_nature = {
+		defensiveness = 0.2
 	}
 }
